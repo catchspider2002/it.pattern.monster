@@ -75,7 +75,7 @@
 
     // dispatch("theme", themeColor);
   }
-  let starsCount = 165;
+  let starsCount = 167;
 
   const userAction = async () => {
     const response = await fetch("https://api.github.com/search/repositories?q=svelte-svg-patterns");
@@ -188,7 +188,7 @@
     <a rel="noopener noreferrer" title={strings.buyCoffee} class="bmc" target="_blank" href="https://www.buymeacoffee.com/naveencs">
       {@html Constants.bmcHeader}
     </a>
-    <a class="downloadsButton" title="Downloads" href="downloads">{strings.downloads}</a>
+    <a class="downloadsButton" title={strings.downloads} href="downloads">{strings.downloads}</a>
     <LangSelect />
     <a
       class="tweetNav"
